@@ -1,0 +1,34 @@
+
+<input type="text" placeholder="DIGITE LA CIUDAD A BUSCAR" [(ngModel)]="ciudad">
+<input type="button" (click)="buscar()" value="Buscar">
+<div class="carta" 
+
+[ngClass]="{
+
+    'colordia': noche==='yes' 
+}"
+
+
+>
+
+    
+    <div  *ngIf="dia==='yes'; else noche; else noche"> 
+        <span id="dia" class="material-symbols-outlined">
+            sunny
+            </span>
+    </div>
+    <ng-template #noche>
+        <span id="dia" class="material-symbols-outlined">
+            clear_night
+            </span>
+    </ng-template>
+        <p id="ciudad">{{ubicacion.query}}</p>
+        <p id="temperatura">{{informacion.temperature}}</p>
+        <p id="clima">{{clima}}</p>
+        
+        <span id="icono" class="material-symbols-outlined">
+            filter_drama
+            </span>
+  
+</div>
+

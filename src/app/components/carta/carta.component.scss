@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+
+.carta {
+
+
+    
+    width: 150px;
+    height: 120px;
+    position: absolute;
+
+    top: 80px;
+    border-radius: 30px;
+    &.colordia{
+        background: rgb(255, 255, 74);
+        background: linear-gradient(180deg, rgba(255, 220, 74, 1) 0%, rgba(246, 196, 9, 1) 23%, rgba(241, 192, 28, 1) 93%);
+    }
+    &.colornoche{
+   background: rgb(160,181,255);
+    background: linear-gradient(180deg, rgba(160,181,255,1) 0%, rgba(36,73,176,1) 23%, rgba(87,123,213,1) 93%);
+    }
+}
+
+
+
+#temperatura {
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    position: relative;
+    bottom: 60px;
+    left: 20px;
+
+
+}
+
+#ciudad {
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    position: relative;
+    top: 10px;
+    left: 20px;
+
+
+}
+
+#clima {
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    position: relative;
+    bottom: 135px;
+    right: 40px;
+    text-align: right;
+
+}
+
+#icono.material-symbols-outlined {
+    position: relative;
+    bottom: 195px;
+    left: 85px;
+    color:white;
+    font-size: 40px;
+    
+}
+#dia.material-symbols-outlined {
+    position: absolute;
+    bottom: 55%;
+    left: 85px;
+    color: white;
+    font-size: 20px;
+    
+}
+
+
+
+#sensacion{
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    bottom: 270px;
+    left: 30px;
+    color: white;
+    font-size: 24px; 
+}
+
+#humedad{
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    bottom: 290px;
+    left: 30px;
+    color: white;
+    font-size: 24px; 
+}
