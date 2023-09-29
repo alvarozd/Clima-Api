@@ -11,8 +11,8 @@ export class CartaComponent {
   informacion: any;
   clima: any;
   ciudad: string = 'Bogota';
-  dia:any = ''
-  clasetarjeta: string = 'dia';
+  dia:any = 'yes'
+
 
   constructor(private weatherService: ApiService) {}
 

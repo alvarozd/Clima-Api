@@ -4,14 +4,15 @@
 <div class="carta" 
 
 [ngClass]="{
-
-    'colordia': noche==='yes' 
+    'colordia': dia==='yes',
+    'colornoche':dia==='no'
 }"
-
-
 >
 
     
+
+
+
     <div  *ngIf="dia==='yes'; else noche; else noche"> 
         <span id="dia" class="material-symbols-outlined">
             sunny
@@ -26,9 +27,25 @@
         <p id="temperatura">{{informacion.temperature}}</p>
         <p id="clima">{{clima}}</p>
         
-        <span id="icono" class="material-symbols-outlined">
-            filter_drama
+ <div [ngSwitch]="clima">
+    
+        <span id="icono" *ngSwitchCase="'Clear'" class="material-symbols-outlined">
+            Sunny
             </span>
+            <span id="icono" *ngSwitchCase="'Partly cloudy'" class="material-symbols-outlined">
+                partly_cloudy_day
+                </span>
+                <span id="icono" *ngSwitchCase="'Sunny'" class="material-symbols-outlined">
+                  wb_sunny
+                    </span>
+                    <span id="icono" *ngSwitchCase="'Thundery outbreaks possible'" class="material-symbols-outlined">
+                      bolt
+                          </span>
+
+
+    <div *ngSwitchDefault>sin nada</div>
+  </div>
+        
   
 </div>
 
